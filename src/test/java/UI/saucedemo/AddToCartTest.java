@@ -1,5 +1,4 @@
 package UI.saucedemo;
-
 import UI.submitDemo.PageUITest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utils.ExcelUtils;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +22,6 @@ public class AddToCartTest {
     double totalPriceNew = 0.0;
     public PageUITest pageUITest;
     String productData = "productData.xlsx";
-
 
     @BeforeTest
     public void setUp() {
@@ -66,8 +63,6 @@ public class AddToCartTest {
 
         // Doc Excel
         List<Map<String, String>> excelData = ExcelUtils.readExcelData(productData, "Sheet3");
-
-
         // Duyet qua tung ban ghi trong du lieu
         for (Map<String, String> rowData : excelData) {
             String product = rowData.get("Product"); // Lay du lieu tu Product

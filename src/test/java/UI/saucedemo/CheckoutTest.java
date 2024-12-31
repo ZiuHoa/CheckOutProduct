@@ -21,7 +21,7 @@ public class CheckoutTest {
     public PageUITest pageUITest;
 
     @BeforeMethod
-    public void login() throws InterruptedException {
+    public void login() {
         driver = new ChromeDriver(); // Khởi tạo lại trình duyệt
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));

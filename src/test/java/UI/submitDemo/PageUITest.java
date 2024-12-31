@@ -27,8 +27,6 @@ public class PageUITest {
     public WebElement productBike(){ return driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));}
     public WebElement productTshirt(){ return driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt"));}
 
-
-
     public WebElement getCheckCartIcon() { return driver.findElement(By.id("shopping_cart_container"));}
 
     public WebElement checkOutButton() { return driver.findElement(By.id("checkout"));}
