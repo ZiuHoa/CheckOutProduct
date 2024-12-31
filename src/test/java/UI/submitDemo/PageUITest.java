@@ -23,6 +23,12 @@ public class PageUITest {
         return driver.findElement(By.id("login-button"));
     }
 
+    public WebElement productBackpack(){ return driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));}
+    public WebElement productBike(){ return driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"));}
+    public WebElement productTshirt(){ return driver.findElement(By.id("add-to-cart-sauce-labs-bolt-t-shirt"));}
+
+
+
     public WebElement getCheckCartIcon() { return driver.findElement(By.id("shopping_cart_container"));}
 
     public WebElement checkOutButton() { return driver.findElement(By.id("checkout"));}
@@ -32,6 +38,7 @@ public class PageUITest {
     public WebElement  checkOutLastName() { return driver.findElement(By.id("last-name"));}
 
     public WebElement  checkOutPostalCode() { return driver.findElement(By.id("postal-code"));}
+    public WebElement checkOutCancelButton() {return driver.findElement(By.id("cancel"));}
 
     public WebElement  checkOutContinueButton() { return driver.findElement(By.id("continue"));}
 

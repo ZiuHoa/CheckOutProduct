@@ -1,4 +1,4 @@
-package UI.day07;
+package UI.saucedemo;
 
 import UI.submitDemo.PageUITest;
 import org.openqa.selenium.By;
@@ -37,9 +37,9 @@ public class AddToCartTest {
     public void login() {
         driver.get("https://saucedemo.com");
         pageUITest = new PageUITest(driver);
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        driver.findElement(By.id("login-button")).click();
+        pageUITest.inputUser().sendKeys("standard_user");
+        pageUITest.inputPass().sendKeys("secret_sauce");
+        pageUITest.loginButton().click();
     }
     @Test
     public void addToCartSuccess() {
